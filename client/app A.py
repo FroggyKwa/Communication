@@ -10,7 +10,8 @@ def change():
     status %= 4
 
     b1['text'] = status + 1
-    r = requests.post(f'{api_url}/changeState/?num={status}')
+    r = requests.post(f'{api_url}/changeState?num={status}')
+    print(r.json(), r.status_code, r.headers, sep='\n')
 
 
 
