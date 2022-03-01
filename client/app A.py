@@ -1,6 +1,7 @@
+import requests
 from tkinter import *
 from tkinter.ttk import *
-import requests
+
 from settings import API_URL, DEBUG, FREEZE_WINDOW
 
 r = requests.get(f'{API_URL}/getState/')
