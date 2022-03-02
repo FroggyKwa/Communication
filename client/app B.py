@@ -43,7 +43,7 @@ def task():
     l1['text'] = status
     if DEBUG:
         print(r.json())
-    window.after(200, task)  # reschedule event in 2 seconds
+    window.after(200, task)  # reschedule event in 0.2 seconds
 
 
 window.after(200, task)
